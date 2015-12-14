@@ -4,8 +4,8 @@ public class Sphere extends Circle implements Volume{
 	super(radius,name);
     }
 
-    public getVolume(){
-	return (4/3)*3.14*(radius*radius*radius);
+    public double getVolume(){
+	return (4/3)*3.14*(getRadius()*getRadius()*getRadius());
     }
 
     public String toString(){

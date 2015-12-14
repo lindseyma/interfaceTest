@@ -4,11 +4,11 @@ public class Sphere extends Circle implements Volume{
 	super(radius,name);
     }
 
-    public getVolume(){
+    public double getVolume(){
 	return (4/3)*3.14*(radius*radius*radius);
     }
 
     public String toString(){
-	return "FIXME!";
+	return "Sphere " + getName()+ " with radius of " + getRadius();
     }
 }
